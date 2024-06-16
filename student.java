@@ -11,10 +11,10 @@ public class student {
                 {75, 45, 80, 60, 70}    };
         String[] studentNames = {
                 "Laasya",
-                "Hari",
-                "Ajith",
+                "Hariha",
+                "Ajitha",
                 "Charitha",
-                "Pawan"           };
+                "Pavani"           };
         List<List<Double>> assignmentScores = colsToRows(studentScores);
         int i = 0;
         for(double[] score : studentScores) {
