@@ -11,7 +11,7 @@ public class student {
                 {75, 45, 80, 60, 70}    };
         String[] studentNames = {
                 "Laasya",
-                "Hariha",
+                "Haritha",
                 "Ajitha",
                 "Charitha",
                 "Pavani"           };
