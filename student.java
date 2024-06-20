@@ -11,18 +11,17 @@ public class student {
                 {75, 45, 80, 60, 70}    };
         String[] studentNames = {
                 "Laasya",
-                "Haritha",
-                "Ajitha",
+                "Pavani",
+                "David",
                 "Charitha",
-                "Pavani"           };
-        List<List<Double>> assignmentScores = colsToRows(studentScores);
+                "Divya"           };
         int i = 0;
         for(double[] score : studentScores) {
             System.out.println(studentNames[i]);
             System.out.println("Highest score = " + max(score));
             System.out.println("Lowest score = " + min(score));
-            System.out.println("Mean = " + mean(score) + " Grade:" + gradeLetter(mean(score)));
-            System.out.println("Mean (lowest dropped) = " + meanLowDrop(score));
+            System.out.println("Average= " + mean(score) );
+            System.out.println (" Grade:" + gradeLetter(mean(score)));
             System.out.println("-------------------------------------");
             i++;
         }
@@ -51,15 +50,6 @@ public class student {
             sum += number;
         }
         return sum / numbers.length;
-    }
-
-    public static double meanLowDrop(double[] numbers) {
-        double lowestGrade = min(numbers);
-        double sum = 0;
-        for (double number : numbers) {
-            sum += number;
-        }
-        return (sum - lowestGrade) / (numbers.length - 1);
     }
     public static char gradeLetter(double mean) {
         char result;
